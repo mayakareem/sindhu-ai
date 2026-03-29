@@ -1370,6 +1370,7 @@
             <li><a onclick="showSection('30days')">30-60-90 Plan</a></li>
             <li><a onclick="showSection('proof')">Proof Points</a></li>
             <li><a onclick="showSection('kpi')">KPI Dashboard</a></li>
+            <li><a onclick="showSection('governance')">Governance</a></li>
             <li><a onclick="showSection('ask')">Ask Anything</a></li>
         </ul>
         <div class="nav-cta">
@@ -3372,7 +3373,7 @@
                 <p style="text-align:center; font-size:1.05rem; color:var(--navy); font-weight:700; margin-bottom:1.5rem;">250 people &#8594; 1,000 effective capacity - a <span style="color:var(--red-accent);">4x AI multiplier</span> across every function.</p>
 
                 <!-- Overall Summary KPIs -->
-                <div style="display:grid; grid-template-columns: repeat(5, 1fr); gap:1rem; margin-bottom:2rem;" class="mobile-stack-grid">
+                <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:1rem; margin-bottom:1rem;" class="mobile-stack-grid">
                     <div style="background:var(--navy); border-radius:var(--radius); padding:1.25rem; color:white; text-align:center;">
                         <div style="font-size:0.65rem; text-transform:uppercase; letter-spacing:0.08em; opacity:0.7;">AI Agents Deployed</div>
                         <div style="font-size:2rem; font-weight:800; margin:0.25rem 0;">42</div>
@@ -3383,6 +3384,13 @@
                         <div style="font-size:2rem; font-weight:800; margin:0.25rem 0; color:#4ADE80;">+750</div>
                         <div style="font-size:0.75rem; color:#4ADE80;">via AI agents</div>
                     </div>
+                    <div style="background:var(--navy); border-radius:var(--radius); padding:1.25rem; color:white; text-align:center;">
+                        <div style="font-size:0.65rem; text-transform:uppercase; letter-spacing:0.08em; opacity:0.7;">Revenue / Employee</div>
+                        <div style="font-size:2rem; font-weight:800; margin:0.25rem 0; color:#4ADE80;">+3.2x</div>
+                        <div style="font-size:0.75rem; color:#4ADE80;">projected uplift</div>
+                    </div>
+                </div>
+                <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:1rem; margin-bottom:2rem;" class="mobile-stack-grid">
                     <div style="background:var(--navy); border-radius:var(--radius); padding:1.25rem; color:white; text-align:center;">
                         <div style="font-size:0.65rem; text-transform:uppercase; letter-spacing:0.08em; opacity:0.7;">Avg Cycle Time</div>
                         <div style="font-size:2rem; font-weight:800; margin:0.25rem 0;">-62%</div>
@@ -3716,6 +3724,61 @@
             </div>
         </div>
 
+        <!-- GOVERNANCE & COMPLIANCE -->
+        <div id="governance" class="sect">
+            <div class="section-wrap">
+                <h2 class="section-title">Governance & Compliance</h2>
+                <p class="section-desc">AI enablement without guardrails is a liability. Here's the framework to keep it safe, auditable, and Saudi-compliant.</p>
+                <p style="text-align:center; font-size:0.75rem; color:var(--text-muted); margin-top:-0.25rem; margin-bottom:1.5rem; font-style:italic;">Illustrative framework - will be tailored to Lucidya's existing policies and the CEO's priorities.</p>
+
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1.5rem; margin-bottom:2rem;" class="mobile-stack-grid">
+                    <!-- Centralized AI Registry -->
+                    <div class="white-card">
+                        <h4 style="color:var(--navy); font-size:0.95rem; margin-bottom:0.75rem;">Centralized AI Registry</h4>
+                        <ul style="font-size:0.85rem; color:var(--text-body); line-height:1.8; padding-left:1.25rem; margin:0;">
+                            <li>Single inventory of every AI tool, agent, and automation in use</li>
+                            <li>Owner, department, data access level, and renewal date tracked</li>
+                            <li>Approval workflow for new tool adoption</li>
+                            <li>Quarterly audit of active vs. shelfware tools</li>
+                        </ul>
+                    </div>
+
+                    <!-- Data Security -->
+                    <div class="white-card">
+                        <h4 style="color:var(--navy); font-size:0.95rem; margin-bottom:0.75rem;">Data Security & Privacy</h4>
+                        <ul style="font-size:0.85rem; color:var(--text-body); line-height:1.8; padding-left:1.25rem; margin:0;">
+                            <li>Data classification tiers: public, internal, confidential, restricted</li>
+                            <li>No customer PII in external AI tools without encryption</li>
+                            <li>Vendor DPA review before any data-sharing integration</li>
+                            <li>Automated PII detection in AI agent inputs/outputs</li>
+                        </ul>
+                    </div>
+
+                    <!-- Saudi Compliance -->
+                    <div class="white-card">
+                        <h4 style="color:var(--navy); font-size:0.95rem; margin-bottom:0.75rem;">Saudi & GCC Regulatory Alignment</h4>
+                        <ul style="font-size:0.85rem; color:var(--text-body); line-height:1.8; padding-left:1.25rem; margin:0;">
+                            <li>PDPL (Personal Data Protection Law) compliance for all AI workflows</li>
+                            <li>SDAIA AI Ethics guidelines adherence</li>
+                            <li>Data residency: Saudi-hosted or approved cloud regions</li>
+                            <li>Enterprise customer audit-readiness documentation</li>
+                        </ul>
+                    </div>
+
+                    <!-- AI Governance Board -->
+                    <div class="white-card">
+                        <h4 style="color:var(--navy); font-size:0.95rem; margin-bottom:0.75rem;">AI Governance Board</h4>
+                        <ul style="font-size:0.85rem; color:var(--text-body); line-height:1.8; padding-left:1.25rem; margin:0;">
+                            <li>Monthly review: CEO, CTO, Head of AI Enablement, Legal</li>
+                            <li>Risk register: bias, hallucination, data leakage scoring</li>
+                            <li>Incident response playbook for AI failures</li>
+                            <li>Monthly AI Enablement Scorecard published to leadership</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- CTA FOOTER -->
         <div class="cta-footer">
             <h2>Take the next step toward<br>smarter AI-enabled operations</h2>
@@ -3770,7 +3833,9 @@
             {keywords:['forrester','gartner','recognition','award'], question:'Industry recognition?', answer:'Got QuestionPro listed on Forrester and Gartner\'s Critical Voice of Customer Technologies list. Forrester-certified CX professional. Recognition award from the President of Intel India. London Business School Student of the Year.'},
             {keywords:['cx','customer experience','product owner'], question:'CX expertise?', answer:'Global Product Owner for QuestionPro CX platform with 1M+ sessions. Built the global CX customer success team. Currently building CX agents for automated customer experience workflows. Forrester-certified CX professional. Deep understanding of sentiment analysis, NPS, and real-time engagement.'},
             {keywords:['lucidya','fit','match','why lucidya'], question:'Why Lucidya specifically?', answer:'Same operating playbook - B2B SaaS, CX platform, Arabic-first, MENA enterprise and government clients, scaling with AI. Sindhu has been doing the exact same work at QuestionPro for 8 years. The transition is natural, and she brings a proven playbook for what Abdullah is building.'},
-            {keywords:['philosophy','values','mindset','approach to work'], question:'Work philosophy?', answer:'Results over slides. Build systems, not presentations. Small teams can outperform large ones with the right workflows and leverage. Measure everything. No sacred cows. The discipline from competitive sports - consistency, recovery, pushing limits - defines her leadership approach.'}
+            {keywords:['philosophy','values','mindset','approach to work'], question:'Work philosophy?', answer:'Results over slides. Build systems, not presentations. Small teams can outperform large ones with the right workflows and leverage. Measure everything. No sacred cows. The discipline from competitive sports - consistency, recovery, pushing limits - defines her leadership approach.'},
+            {keywords:['governance','compliance','regulation','saudi','pdpl','data security','privacy','risk'], question:'How does Sindhu approach AI governance?', answer:'AI without guardrails is a liability. Her framework includes a centralized AI registry tracking every tool and agent, data classification tiers with PII detection, Saudi PDPL and SDAIA compliance, vendor DPA reviews, and a monthly AI Governance Board with CEO, CTO, and Legal. She has experience navigating enterprise and government compliance requirements across the MENA region.'},
+            {keywords:['revenue per employee','productivity metric','efficiency','output'], question:'How does she measure AI productivity impact?', answer:'Revenue per employee is the north star metric - it captures whether AI enablement is actually translating to business output, not just activity. She pairs this with cycle time reduction, error rates, automation percentage, and the force multiplier (effective capacity vs. actual headcount). Monthly AI Enablement Scorecards track all of these for the CEO and leadership team.'}
         ];
 
         // Contact dropdown
