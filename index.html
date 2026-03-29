@@ -2902,6 +2902,7 @@
                     <button class="wf-tab active" onclick="showPhaseTab('30', this)" style="padding: 0.6rem 1.5rem; font-size: 0.95rem;">Days 1-30</button>
                     <button class="wf-tab" onclick="showPhaseTab('60', this)" style="padding: 0.6rem 1.5rem; font-size: 0.95rem;">Days 31-60</button>
                     <button class="wf-tab" onclick="showPhaseTab('90', this)" style="padding: 0.6rem 1.5rem; font-size: 0.95rem;">Days 61-90</button>
+                    <button class="wf-tab" onclick="showPhaseTab('beyond', this)" style="padding: 0.6rem 1.5rem; font-size: 0.95rem;">90+ Days</button>
                 </div>
 
                 <!-- PHASE 1: Days 1-30 -->
@@ -3049,6 +3050,60 @@
                         <div class="note-content">By day 90, Lucidya will have: a complete workflow map of every function, baseline metrics for every major process, 5+ AI agents and copilots in production, hard evidence of time and cost savings, a trained internal team championing adoption, and an approved roadmap for scaling to 250-person-operates-like-1000 territory. This is not a strategy exercise - it's a working operating system.</div>
                     </div>
                 </div>
+
+                <!-- PHASE 4: 90+ Days -->
+                <div class="wf-tab-panel" id="phasePanel-beyond">
+                    <div style="background: var(--navy); border-radius: var(--radius); padding: 2rem 2.5rem; color: white; margin-bottom: 2rem;">
+                        <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.7; margin-bottom: 0.5rem;">Phase 4</div>
+                        <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem;">90+ Days - Scale, Evolve & Stay Ahead</h3>
+                        <p style="font-size: 0.9rem; opacity: 0.85; line-height: 1.6;">The AI landscape shifts every quarter. This phase is about compounding early wins while staying on the bleeding edge.</p>
+                    </div>
+
+                    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1.5rem;" class="mobile-stack-grid">
+                        <div class="white-card">
+                            <h4 style="color:var(--navy); font-size:0.95rem; margin-bottom:0.75rem;">AI Tech Radar - Continuous Scouting</h4>
+                            <ul style="font-size:0.85rem; color:var(--text-body); line-height:1.8; padding-left:1.25rem; margin:0;">
+                                <li>Monthly evaluation of new LLMs, agent frameworks, and automation tools</li>
+                                <li>Track releases from Anthropic (Claude), OpenAI, Google (Gemini), Meta (Llama), and open-source ecosystem</li>
+                                <li>Test new capabilities against Lucidya's active agent inventory</li>
+                                <li>Maintain an internal "AI Tech Radar" - adopt, trial, assess, hold</li>
+                            </ul>
+                        </div>
+                        <div class="white-card">
+                            <h4 style="color:var(--navy); font-size:0.95rem; margin-bottom:0.75rem;">Scale the Agent Fleet</h4>
+                            <ul style="font-size:0.85rem; color:var(--text-body); line-height:1.8; padding-left:1.25rem; margin:0;">
+                                <li>Expand from 42 agents to 60+ as new use cases surface</li>
+                                <li>Multi-agent orchestration: agents that delegate to other agents</li>
+                                <li>Cross-department agent pipelines (e.g., CS ticket &#8594; Product backlog &#8594; Engineering sprint)</li>
+                                <li>Self-improving agents with feedback loops and quality scoring</li>
+                            </ul>
+                        </div>
+                        <div class="white-card">
+                            <h4 style="color:var(--navy); font-size:0.95rem; margin-bottom:0.75rem;">Deepening AI Literacy</h4>
+                            <ul style="font-size:0.85rem; color:var(--text-body); line-height:1.8; padding-left:1.25rem; margin:0;">
+                                <li>Quarterly AI bootcamps for all departments</li>
+                                <li>Prompt engineering certification program for power users</li>
+                                <li>Internal AI Champions network - peer-to-peer knowledge sharing</li>
+                                <li>Lunch-and-learn series: "What just shipped in AI this month"</li>
+                            </ul>
+                        </div>
+                        <div class="white-card">
+                            <h4 style="color:var(--navy); font-size:0.95rem; margin-bottom:0.75rem;">Strategic Compounding</h4>
+                            <ul style="font-size:0.85rem; color:var(--text-body); line-height:1.8; padding-left:1.25rem; margin:0;">
+                                <li>Quarterly AI Enablement Scorecard for CEO and board</li>
+                                <li>Revenue per employee tracking as the north star KPI</li>
+                                <li>Benchmark Lucidya's AI maturity against industry leaders</li>
+                                <li>Build proprietary AI workflows as competitive moats</li>
+                                <li>Target: 250 &#8594; 1,000 effective capacity within 12-18 months</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="note-box" style="margin-top: 2rem;">
+                        <div class="note-title">The long game</div>
+                        <div class="note-content">AI enablement is not a project with a finish line - it's an operating muscle. The goal is to build Lucidya into a company where AI leverage is as natural as using email. Every new tool, model, or framework is an opportunity to widen the gap between Lucidya and everyone else.</div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -3144,9 +3199,38 @@
                         </div>
 
                         <div class="about-block">
+                            <h3>AI Tools & Stack</h3>
+                            <div class="red-underline"></div>
+                            <div style="margin-bottom:0.5rem;">
+                                <span style="font-size:0.8rem; font-weight:600; color:var(--navy); display:block; margin-bottom:0.35rem;">LLMs & Agents</span>
+                                <span class="badge">Claude (Code & Cowork)</span>
+                                <span class="badge">ChatGPT (Codex)</span>
+                                <span class="badge">Gemini</span>
+                                <span class="badge">Llama</span>
+                                <span class="badge">Cursor</span>
+                            </div>
+                            <div style="margin-bottom:0.5rem;">
+                                <span style="font-size:0.8rem; font-weight:600; color:var(--navy); display:block; margin-bottom:0.35rem;">Automation & Orchestration</span>
+                                <span class="badge">Zapier</span>
+                                <span class="badge">Make</span>
+                                <span class="badge">n8n</span>
+                                <span class="badge">LangChain</span>
+                                <span class="badge">CrewAI</span>
+                            </div>
+                            <div>
+                                <span style="font-size:0.8rem; font-weight:600; color:var(--navy); display:block; margin-bottom:0.35rem;">Platforms & Infrastructure</span>
+                                <span class="badge">Vercel</span>
+                                <span class="badge">Railway</span>
+                                <span class="badge">Supabase</span>
+                                <span class="badge">HubSpot</span>
+                                <span class="badge">Notion</span>
+                            </div>
+                        </div>
+
+                        <div class="about-block">
                             <h3>Advisory & Board Roles</h3>
                             <div class="red-underline"></div>
-                            <div>
+                            <div style="display:flex; flex-wrap:wrap; gap:0.3rem;">
                                 <span class="badge">Fresco</span>
                                 <span class="badge">IdeaScale</span>
                                 <span class="badge">Insisive Cloud</span>
@@ -3157,18 +3241,17 @@
                         <div class="about-block">
                             <h3>Core Areas</h3>
                             <div class="red-underline"></div>
-                            <div>
-                                <span class="badge">AI Enablement</span>
-                                <span class="badge">Workflow Redesign</span>
-                                <span class="badge">Productivity Transformation</span>
-                                <span class="badge">Operating Model Improvement</span>
-                                <span class="badge">Cross-Functional Leadership</span>
-                                <span class="badge">LLM Applications</span>
-                                <span class="badge">Automation Strategy</span>
-                                <span class="badge">SaaS Operations</span>
-                                <span class="badge">Product Management</span>
-                                <span class="badge">Customer Experience</span>
-                                <span class="badge">Revenue Operations</span>
+                            <div style="display:flex; flex-wrap:wrap; gap:0.25rem;">
+                                <span class="badge" style="padding:0.3rem 0.65rem; font-size:0.78rem;">AI Enablement</span>
+                                <span class="badge" style="padding:0.3rem 0.65rem; font-size:0.78rem;">SaaS Ops</span>
+                                <span class="badge" style="padding:0.3rem 0.65rem; font-size:0.78rem;">Workflow Redesign</span>
+                                <span class="badge" style="padding:0.3rem 0.65rem; font-size:0.78rem;">LLM Apps</span>
+                                <span class="badge" style="padding:0.3rem 0.65rem; font-size:0.78rem;">Productivity</span>
+                                <span class="badge" style="padding:0.3rem 0.65rem; font-size:0.78rem;">Automation</span>
+                                <span class="badge" style="padding:0.3rem 0.65rem; font-size:0.78rem;">Cross-Functional</span>
+                                <span class="badge" style="padding:0.3rem 0.65rem; font-size:0.78rem;">Product Mgmt</span>
+                                <span class="badge" style="padding:0.3rem 0.65rem; font-size:0.78rem;">CX</span>
+                                <span class="badge" style="padding:0.3rem 0.65rem; font-size:0.78rem;">Rev Ops</span>
                             </div>
                         </div>
 
@@ -3796,6 +3879,14 @@
             <a href="tel:+971585998383" class="btn-outline">Phone</a>
             <a href="https://linkedin.com/in/sindhusreenath" target="_blank" class="btn-outline">Connect on LinkedIn</a>
             <a href="https://wa.me/971585998383" target="_blank" class="btn-outline">WhatsApp</a>
+            <div style="margin-top:1.5rem;">
+                <a href="https://researchguide.up.railway.app/" target="_blank" style="font-size:0.85rem; color:rgba(255,255,255,0.7); text-decoration:underline; text-underline-offset:3px;">View my Research Guide tool &#8594;</a>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div style="text-align:center; padding:1.5rem; font-size:0.75rem; color:var(--text-muted);">
+            &copy; 2026 Sindhu Sreenath. Built with Claude Code.
         </div>
     </div>
 
@@ -3944,7 +4035,7 @@
             document.querySelectorAll('#phaseTabs .wf-tab').forEach(t => t.classList.remove('active'));
             el.classList.add('active');
 
-            ['30', '60', '90'].forEach(function(p) {
+            ['30', '60', '90', 'beyond'].forEach(function(p) {
                 var panel = document.getElementById('phasePanel-' + p);
                 if (panel) {
                     panel.classList.remove('visible');
