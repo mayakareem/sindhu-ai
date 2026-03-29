@@ -781,6 +781,16 @@
                 padding-bottom: 0.5rem;
                 -webkit-overflow-scrolling: touch;
                 gap: 0.15rem;
+                mask-image: linear-gradient(to right, black 85%, transparent 100%);
+                -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
+            }
+            .nav-links.scrolled-end {
+                mask-image: linear-gradient(to left, black 85%, transparent 100%);
+                -webkit-mask-image: linear-gradient(to left, black 85%, transparent 100%);
+            }
+            .nav-links.scrolled-mid {
+                mask-image: linear-gradient(to right, transparent 0%, black 10%, black 85%, transparent 100%);
+                -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 85%, transparent 100%);
             }
 
             .nav-links a { font-size: 0.75rem; padding: 0.35rem 0.5rem; white-space: nowrap; }
@@ -3995,6 +4005,23 @@
                 if (panel) panel.classList.add('visible');
             }
         })();
+    </script>
+    <script>
+    // Nav scroll fade hint
+    (function() {
+        var nav = document.querySelector('.nav-links');
+        if (!nav) return;
+        function updateFade() {
+            var sl = nav.scrollLeft, sw = nav.scrollWidth, cw = nav.clientWidth;
+            if (sw <= cw) { nav.classList.remove('scrolled-end','scrolled-mid'); return; }
+            if (sl < 5) { nav.classList.remove('scrolled-end','scrolled-mid'); }
+            else if (sl + cw >= sw - 5) { nav.classList.add('scrolled-end'); nav.classList.remove('scrolled-mid'); }
+            else { nav.classList.add('scrolled-mid'); nav.classList.remove('scrolled-end'); }
+        }
+        nav.addEventListener('scroll', updateFade);
+        window.addEventListener('resize', updateFade);
+        updateFade();
+    })();
     </script>
     <!-- Vercel Web Analytics -->
     <script defer src="/_vercel/insights/script.js"></script>
