@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sindhu Sreenath - AI Enablement & Productivity</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231B1464'/%3E%3Ctext x='16' y='23' font-family='system-ui,-apple-system,sans-serif' font-size='20' font-weight='700' fill='white' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
     <style>
         :root {
             --navy: #1B1464;
@@ -3364,15 +3365,23 @@
         <div id="kpi" class="sect">
             <div class="section-wrap">
                 <h2 class="section-title">KPI Dashboard</h2>
-                <p class="section-desc">Live view of projected AI enablement metrics - click any function to drill into agent-level performance.</p>
+                <p class="section-desc">250 people. 1,000-person output. Here's how AI agents close the gap - click any function to drill into agent-level performance.</p>
                 <p style="text-align:center; font-size:0.75rem; color:var(--text-muted); margin-top:-0.25rem; margin-bottom:1.5rem; font-style:italic;">Sample data for illustration - actuals will be calibrated against Lucidya's baselines and the CEO's priorities.</p>
+
+                <!-- Headline: 250 → 1000 -->
+                <p style="text-align:center; font-size:1.05rem; color:var(--navy); font-weight:700; margin-bottom:1.5rem;">250 people &#8594; 1,000 effective capacity - a <span style="color:var(--red-accent);">4x AI multiplier</span> across every function.</p>
 
                 <!-- Overall Summary KPIs -->
                 <div style="display:grid; grid-template-columns: repeat(5, 1fr); gap:1rem; margin-bottom:2rem;" class="mobile-stack-grid">
                     <div style="background:var(--navy); border-radius:var(--radius); padding:1.25rem; color:white; text-align:center;">
-                        <div style="font-size:0.65rem; text-transform:uppercase; letter-spacing:0.08em; opacity:0.7;">Total Agents</div>
+                        <div style="font-size:0.65rem; text-transform:uppercase; letter-spacing:0.08em; opacity:0.7;">AI Agents Deployed</div>
                         <div style="font-size:2rem; font-weight:800; margin:0.25rem 0;">42</div>
-                        <div style="font-size:0.75rem; opacity:0.7;">Across 13 functions</div>
+                        <div style="font-size:0.75rem; opacity:0.7;">across 8 functions</div>
+                    </div>
+                    <div style="background:var(--navy); border-radius:var(--radius); padding:1.25rem; color:white; text-align:center;">
+                        <div style="font-size:0.65rem; text-transform:uppercase; letter-spacing:0.08em; opacity:0.7;">FTE Equivalent Created</div>
+                        <div style="font-size:2rem; font-weight:800; margin:0.25rem 0; color:#4ADE80;">+750</div>
+                        <div style="font-size:0.75rem; color:#4ADE80;">via AI agents</div>
                     </div>
                     <div style="background:var(--navy); border-radius:var(--radius); padding:1.25rem; color:white; text-align:center;">
                         <div style="font-size:0.65rem; text-transform:uppercase; letter-spacing:0.08em; opacity:0.7;">Avg Cycle Time</div>
@@ -3380,19 +3389,14 @@
                         <div style="font-size:0.75rem; color:#4ADE80;">vs baseline</div>
                     </div>
                     <div style="background:var(--navy); border-radius:var(--radius); padding:1.25rem; color:white; text-align:center;">
-                        <div style="font-size:0.65rem; text-transform:uppercase; letter-spacing:0.08em; opacity:0.7;">Output / FTE</div>
-                        <div style="font-size:2rem; font-weight:800; margin:0.25rem 0;">3.4x</div>
-                        <div style="font-size:0.75rem; color:#4ADE80;">target: 3-5x</div>
-                    </div>
-                    <div style="background:var(--navy); border-radius:var(--radius); padding:1.25rem; color:white; text-align:center;">
                         <div style="font-size:0.65rem; text-transform:uppercase; letter-spacing:0.08em; opacity:0.7;">Error Rate</div>
                         <div style="font-size:2rem; font-weight:800; margin:0.25rem 0;">-71%</div>
                         <div style="font-size:0.75rem; color:#4ADE80;">vs baseline</div>
                     </div>
                     <div style="background:var(--navy); border-radius:var(--radius); padding:1.25rem; color:white; text-align:center;">
-                        <div style="font-size:0.65rem; text-transform:uppercase; letter-spacing:0.08em; opacity:0.7;">Est. Cost Saved</div>
-                        <div style="font-size:2rem; font-weight:800; margin:0.25rem 0;">$1.2M</div>
-                        <div style="font-size:0.75rem; opacity:0.7;">annualized</div>
+                        <div style="font-size:0.65rem; text-transform:uppercase; letter-spacing:0.08em; opacity:0.7;">Est. Cost Avoided</div>
+                        <div style="font-size:2rem; font-weight:800; margin:0.25rem 0;">$18M+</div>
+                        <div style="font-size:0.75rem; opacity:0.7;">vs hiring 750 FTEs</div>
                     </div>
                 </div>
 
@@ -3418,88 +3422,99 @@
                             <thead>
                                 <tr style="background:var(--blue-pale); text-align:left;">
                                     <th style="padding:0.75rem 1rem; font-weight:700; color:var(--navy); border-bottom:2px solid var(--blue-soft);">Function</th>
-                                    <th style="padding:0.75rem 1rem; font-weight:700; color:var(--navy); border-bottom:2px solid var(--blue-soft);">Agents</th>
+                                    <th style="padding:0.75rem 1rem; font-weight:700; color:var(--navy); border-bottom:2px solid var(--blue-soft);">Headcount</th>
+                                    <th style="padding:0.75rem 1rem; font-weight:700; color:var(--navy); border-bottom:2px solid var(--blue-soft);">AI Agents</th>
+                                    <th style="padding:0.75rem 1rem; font-weight:700; color:var(--navy); border-bottom:2px solid var(--blue-soft);">Effective Capacity</th>
+                                    <th style="padding:0.75rem 1rem; font-weight:700; color:var(--navy); border-bottom:2px solid var(--blue-soft);">Multiplier</th>
                                     <th style="padding:0.75rem 1rem; font-weight:700; color:var(--navy); border-bottom:2px solid var(--blue-soft);">Cycle Time</th>
-                                    <th style="padding:0.75rem 1rem; font-weight:700; color:var(--navy); border-bottom:2px solid var(--blue-soft);">Output/FTE</th>
-                                    <th style="padding:0.75rem 1rem; font-weight:700; color:var(--navy); border-bottom:2px solid var(--blue-soft);">Error Rate</th>
-                                    <th style="padding:0.75rem 1rem; font-weight:700; color:var(--navy); border-bottom:2px solid var(--blue-soft);">Automation %</th>
                                     <th style="padding:0.75rem 1rem; font-weight:700; color:var(--navy); border-bottom:2px solid var(--blue-soft);">Status</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr style="border-bottom:1px solid var(--border); cursor:pointer;" onclick="document.querySelector('#kpiTabs .wf-tab:nth-child(2)').click()">
                                     <td style="padding:0.65rem 1rem; font-weight:600; color:var(--navy);">Sales</td>
-                                    <td style="padding:0.65rem 1rem;">4</td>
+                                    <td style="padding:0.65rem 1rem;">35</td>
+                                    <td style="padding:0.65rem 1rem;">6</td>
+                                    <td style="padding:0.65rem 1rem; font-weight:700; color:#16A34A;">140</td>
+                                    <td style="padding:0.65rem 1rem; font-weight:700;">4.0x</td>
                                     <td style="padding:0.65rem 1rem; color:#16A34A;">-58%</td>
-                                    <td style="padding:0.65rem 1rem;">3.2x</td>
-                                    <td style="padding:0.65rem 1rem; color:#16A34A;">-65%</td>
-                                    <td style="padding:0.65rem 1rem;">72%</td>
                                     <td style="padding:0.65rem 1rem;"><span style="background:#DCFCE7; color:#16A34A; padding:0.2rem 0.6rem; border-radius:9999px; font-size:0.75rem; font-weight:600;">On Track</span></td>
                                 </tr>
                                 <tr style="border-bottom:1px solid var(--border); cursor:pointer;" onclick="document.querySelector('#kpiTabs .wf-tab:nth-child(3)').click()">
                                     <td style="padding:0.65rem 1rem; font-weight:600; color:var(--navy);">Marketing</td>
-                                    <td style="padding:0.65rem 1rem;">3</td>
+                                    <td style="padding:0.65rem 1rem;">25</td>
+                                    <td style="padding:0.65rem 1rem;">5</td>
+                                    <td style="padding:0.65rem 1rem; font-weight:700; color:#16A34A;">100</td>
+                                    <td style="padding:0.65rem 1rem; font-weight:700;">4.0x</td>
                                     <td style="padding:0.65rem 1rem; color:#16A34A;">-67%</td>
-                                    <td style="padding:0.65rem 1rem;">4.1x</td>
-                                    <td style="padding:0.65rem 1rem; color:#16A34A;">-73%</td>
-                                    <td style="padding:0.65rem 1rem;">68%</td>
                                     <td style="padding:0.65rem 1rem;"><span style="background:#DCFCE7; color:#16A34A; padding:0.2rem 0.6rem; border-radius:9999px; font-size:0.75rem; font-weight:600;">On Track</span></td>
                                 </tr>
                                 <tr style="border-bottom:1px solid var(--border); cursor:pointer;" onclick="document.querySelector('#kpiTabs .wf-tab:nth-child(4)').click()">
                                     <td style="padding:0.65rem 1rem; font-weight:600; color:var(--navy);">Customer Support</td>
-                                    <td style="padding:0.65rem 1rem;">4</td>
+                                    <td style="padding:0.65rem 1rem;">40</td>
+                                    <td style="padding:0.65rem 1rem;">7</td>
+                                    <td style="padding:0.65rem 1rem; font-weight:700; color:#16A34A;">180</td>
+                                    <td style="padding:0.65rem 1rem; font-weight:700;">4.5x</td>
                                     <td style="padding:0.65rem 1rem; color:#16A34A;">-74%</td>
-                                    <td style="padding:0.65rem 1rem;">4.8x</td>
-                                    <td style="padding:0.65rem 1rem; color:#16A34A;">-81%</td>
-                                    <td style="padding:0.65rem 1rem;">85%</td>
                                     <td style="padding:0.65rem 1rem;"><span style="background:#DCFCE7; color:#16A34A; padding:0.2rem 0.6rem; border-radius:9999px; font-size:0.75rem; font-weight:600;">Exceeding</span></td>
                                 </tr>
                                 <tr style="border-bottom:1px solid var(--border); cursor:pointer;" onclick="document.querySelector('#kpiTabs .wf-tab:nth-child(5)').click()">
                                     <td style="padding:0.65rem 1rem; font-weight:600; color:var(--navy);">Product</td>
-                                    <td style="padding:0.65rem 1rem;">3</td>
+                                    <td style="padding:0.65rem 1rem;">30</td>
+                                    <td style="padding:0.65rem 1rem;">5</td>
+                                    <td style="padding:0.65rem 1rem; font-weight:700; color:#16A34A;">105</td>
+                                    <td style="padding:0.65rem 1rem; font-weight:700;">3.5x</td>
                                     <td style="padding:0.65rem 1rem; color:#16A34A;">-52%</td>
-                                    <td style="padding:0.65rem 1rem;">2.8x</td>
-                                    <td style="padding:0.65rem 1rem; color:#16A34A;">-60%</td>
-                                    <td style="padding:0.65rem 1rem;">55%</td>
                                     <td style="padding:0.65rem 1rem;"><span style="background:#FEF9C3; color:#CA8A04; padding:0.2rem 0.6rem; border-radius:9999px; font-size:0.75rem; font-weight:600;">Ramping</span></td>
                                 </tr>
                                 <tr style="border-bottom:1px solid var(--border); cursor:pointer;" onclick="document.querySelector('#kpiTabs .wf-tab:nth-child(6)').click()">
                                     <td style="padding:0.65rem 1rem; font-weight:600; color:var(--navy);">Engineering</td>
-                                    <td style="padding:0.65rem 1rem;">4</td>
+                                    <td style="padding:0.65rem 1rem;">50</td>
+                                    <td style="padding:0.65rem 1rem;">7</td>
+                                    <td style="padding:0.65rem 1rem; font-weight:700; color:#16A34A;">200</td>
+                                    <td style="padding:0.65rem 1rem; font-weight:700;">4.0x</td>
                                     <td style="padding:0.65rem 1rem; color:#16A34A;">-61%</td>
-                                    <td style="padding:0.65rem 1rem;">3.5x</td>
-                                    <td style="padding:0.65rem 1rem; color:#16A34A;">-78%</td>
-                                    <td style="padding:0.65rem 1rem;">70%</td>
                                     <td style="padding:0.65rem 1rem;"><span style="background:#DCFCE7; color:#16A34A; padding:0.2rem 0.6rem; border-radius:9999px; font-size:0.75rem; font-weight:600;">On Track</span></td>
                                 </tr>
                                 <tr style="border-bottom:1px solid var(--border); cursor:pointer;" onclick="document.querySelector('#kpiTabs .wf-tab:nth-child(7)').click()">
                                     <td style="padding:0.65rem 1rem; font-weight:600; color:var(--navy);">HR</td>
-                                    <td style="padding:0.65rem 1rem;">3</td>
+                                    <td style="padding:0.65rem 1rem;">15</td>
+                                    <td style="padding:0.65rem 1rem;">4</td>
+                                    <td style="padding:0.65rem 1rem; font-weight:700; color:#16A34A;">60</td>
+                                    <td style="padding:0.65rem 1rem; font-weight:700;">4.0x</td>
                                     <td style="padding:0.65rem 1rem; color:#16A34A;">-55%</td>
-                                    <td style="padding:0.65rem 1rem;">2.9x</td>
-                                    <td style="padding:0.65rem 1rem; color:#16A34A;">-62%</td>
-                                    <td style="padding:0.65rem 1rem;">60%</td>
-                                    <td style="padding:0.65rem 1rem;"><span style="background:#FEF9C3; color:#CA8A04; padding:0.2rem 0.6rem; border-radius:9999px; font-size:0.75rem; font-weight:600;">Ramping</span></td>
+                                    <td style="padding:0.65rem 1rem;"><span style="background:#DCFCE7; color:#16A34A; padding:0.2rem 0.6rem; border-radius:9999px; font-size:0.75rem; font-weight:600;">On Track</span></td>
                                 </tr>
                                 <tr style="border-bottom:1px solid var(--border); cursor:pointer;" onclick="document.querySelector('#kpiTabs .wf-tab:nth-child(8)').click()">
                                     <td style="padding:0.65rem 1rem; font-weight:600; color:var(--navy);">Finance</td>
-                                    <td style="padding:0.65rem 1rem;">3</td>
+                                    <td style="padding:0.65rem 1rem;">20</td>
+                                    <td style="padding:0.65rem 1rem;">4</td>
+                                    <td style="padding:0.65rem 1rem; font-weight:700; color:#16A34A;">80</td>
+                                    <td style="padding:0.65rem 1rem; font-weight:700;">4.0x</td>
                                     <td style="padding:0.65rem 1rem; color:#16A34A;">-70%</td>
-                                    <td style="padding:0.65rem 1rem;">3.8x</td>
-                                    <td style="padding:0.65rem 1rem; color:#16A34A;">-85%</td>
-                                    <td style="padding:0.65rem 1rem;">78%</td>
                                     <td style="padding:0.65rem 1rem;"><span style="background:#DCFCE7; color:#16A34A; padding:0.2rem 0.6rem; border-radius:9999px; font-size:0.75rem; font-weight:600;">Exceeding</span></td>
                                 </tr>
                                 <tr style="cursor:pointer;" onclick="document.querySelector('#kpiTabs .wf-tab:nth-child(9)').click()">
                                     <td style="padding:0.65rem 1rem; font-weight:600; color:var(--navy);">Operations</td>
+                                    <td style="padding:0.65rem 1rem;">35</td>
                                     <td style="padding:0.65rem 1rem;">4</td>
+                                    <td style="padding:0.65rem 1rem; font-weight:700; color:#16A34A;">135</td>
+                                    <td style="padding:0.65rem 1rem; font-weight:700;">3.9x</td>
                                     <td style="padding:0.65rem 1rem; color:#16A34A;">-63%</td>
-                                    <td style="padding:0.65rem 1rem;">3.6x</td>
-                                    <td style="padding:0.65rem 1rem; color:#16A34A;">-69%</td>
-                                    <td style="padding:0.65rem 1rem;">74%</td>
                                     <td style="padding:0.65rem 1rem;"><span style="background:#DCFCE7; color:#16A34A; padding:0.2rem 0.6rem; border-radius:9999px; font-size:0.75rem; font-weight:600;">On Track</span></td>
                                 </tr>
                             </tbody>
+                            <tfoot>
+                                <tr style="background:var(--blue-pale); font-weight:700;">
+                                    <td style="padding:0.75rem 1rem; color:var(--navy);">Total</td>
+                                    <td style="padding:0.75rem 1rem;">250</td>
+                                    <td style="padding:0.75rem 1rem;">42</td>
+                                    <td style="padding:0.75rem 1rem; color:#16A34A;">1,000</td>
+                                    <td style="padding:0.75rem 1rem;">4.0x</td>
+                                    <td style="padding:0.75rem 1rem; color:#16A34A;">-62%</td>
+                                    <td style="padding:0.75rem 1rem;"></td>
+                                </tr>
+                            </tfoot>
                         </table>
                     </div>
                     <p style="font-size:0.78rem; color:var(--text-muted); margin-top:0.75rem; text-align:center;">Click any row to drill into agent-level detail for that function</p>
@@ -3508,7 +3523,7 @@
                 <!-- SALES DETAIL -->
                 <div class="wf-tab-panel" id="kpiPanel-kpi-sales">
                     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
-                        <h4 style="color:var(--navy); font-size:1.05rem;">Sales - 4 Agents</h4>
+                        <h4 style="color:var(--navy); font-size:1.05rem;">Sales - 35 people + 6 AI agents = <span style="color:#16A34A;">140 effective capacity</span></h4>
                         <span style="font-size:0.8rem; color:var(--text-muted); cursor:pointer;" onclick="document.querySelector('#kpiTabs .wf-tab:first-child').click()">&larr; Back to overview</span>
                     </div>
                     <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:0.75rem; margin-bottom:1.25rem;" class="mobile-stack-grid">
@@ -3531,7 +3546,7 @@
                 <!-- MARKETING DETAIL -->
                 <div class="wf-tab-panel" id="kpiPanel-kpi-marketing">
                     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
-                        <h4 style="color:var(--navy); font-size:1.05rem;">Marketing - 3 Agents</h4>
+                        <h4 style="color:var(--navy); font-size:1.05rem;">Marketing - 25 people + 5 AI agents = <span style="color:#16A34A;">100 effective capacity</span></h4>
                         <span style="font-size:0.8rem; color:var(--text-muted); cursor:pointer;" onclick="document.querySelector('#kpiTabs .wf-tab:first-child').click()">&larr; Back to overview</span>
                     </div>
                     <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:0.75rem; margin-bottom:1.25rem;" class="mobile-stack-grid">
@@ -3553,7 +3568,7 @@
                 <!-- CS DETAIL -->
                 <div class="wf-tab-panel" id="kpiPanel-kpi-cs">
                     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
-                        <h4 style="color:var(--navy); font-size:1.05rem;">Customer Support - 4 Agents</h4>
+                        <h4 style="color:var(--navy); font-size:1.05rem;">Customer Support - 40 people + 7 AI agents = <span style="color:#16A34A;">180 effective capacity</span></h4>
                         <span style="font-size:0.8rem; color:var(--text-muted); cursor:pointer;" onclick="document.querySelector('#kpiTabs .wf-tab:first-child').click()">&larr; Back to overview</span>
                     </div>
                     <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:0.75rem; margin-bottom:1.25rem;" class="mobile-stack-grid">
@@ -3576,7 +3591,7 @@
                 <!-- PRODUCT DETAIL -->
                 <div class="wf-tab-panel" id="kpiPanel-kpi-product">
                     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
-                        <h4 style="color:var(--navy); font-size:1.05rem;">Product - 3 Agents</h4>
+                        <h4 style="color:var(--navy); font-size:1.05rem;">Product - 30 people + 5 AI agents = <span style="color:#16A34A;">105 effective capacity</span></h4>
                         <span style="font-size:0.8rem; color:var(--text-muted); cursor:pointer;" onclick="document.querySelector('#kpiTabs .wf-tab:first-child').click()">&larr; Back to overview</span>
                     </div>
                     <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:0.75rem; margin-bottom:1.25rem;" class="mobile-stack-grid">
@@ -3598,7 +3613,7 @@
                 <!-- ENGINEERING DETAIL -->
                 <div class="wf-tab-panel" id="kpiPanel-kpi-engineering">
                     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
-                        <h4 style="color:var(--navy); font-size:1.05rem;">Engineering - 4 Agents</h4>
+                        <h4 style="color:var(--navy); font-size:1.05rem;">Engineering - 50 people + 7 AI agents = <span style="color:#16A34A;">200 effective capacity</span></h4>
                         <span style="font-size:0.8rem; color:var(--text-muted); cursor:pointer;" onclick="document.querySelector('#kpiTabs .wf-tab:first-child').click()">&larr; Back to overview</span>
                     </div>
                     <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:0.75rem; margin-bottom:1.25rem;" class="mobile-stack-grid">
@@ -3621,7 +3636,7 @@
                 <!-- HR DETAIL -->
                 <div class="wf-tab-panel" id="kpiPanel-kpi-hr">
                     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
-                        <h4 style="color:var(--navy); font-size:1.05rem;">HR - 3 Agents</h4>
+                        <h4 style="color:var(--navy); font-size:1.05rem;">HR - 15 people + 4 AI agents = <span style="color:#16A34A;">60 effective capacity</span></h4>
                         <span style="font-size:0.8rem; color:var(--text-muted); cursor:pointer;" onclick="document.querySelector('#kpiTabs .wf-tab:first-child').click()">&larr; Back to overview</span>
                     </div>
                     <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:0.75rem; margin-bottom:1.25rem;" class="mobile-stack-grid">
@@ -3643,7 +3658,7 @@
                 <!-- FINANCE DETAIL -->
                 <div class="wf-tab-panel" id="kpiPanel-kpi-finance">
                     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
-                        <h4 style="color:var(--navy); font-size:1.05rem;">Finance - 3 Agents</h4>
+                        <h4 style="color:var(--navy); font-size:1.05rem;">Finance - 20 people + 4 AI agents = <span style="color:#16A34A;">80 effective capacity</span></h4>
                         <span style="font-size:0.8rem; color:var(--text-muted); cursor:pointer;" onclick="document.querySelector('#kpiTabs .wf-tab:first-child').click()">&larr; Back to overview</span>
                     </div>
                     <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:0.75rem; margin-bottom:1.25rem;" class="mobile-stack-grid">
@@ -3665,7 +3680,7 @@
                 <!-- OPS DETAIL -->
                 <div class="wf-tab-panel" id="kpiPanel-kpi-ops">
                     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
-                        <h4 style="color:var(--navy); font-size:1.05rem;">Operations - 4 Agents</h4>
+                        <h4 style="color:var(--navy); font-size:1.05rem;">Operations - 35 people + 4 AI agents = <span style="color:#16A34A;">135 effective capacity</span></h4>
                         <span style="font-size:0.8rem; color:var(--text-muted); cursor:pointer;" onclick="document.querySelector('#kpiTabs .wf-tab:first-child').click()">&larr; Back to overview</span>
                     </div>
                     <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:0.75rem; margin-bottom:1.25rem;" class="mobile-stack-grid">
@@ -3916,5 +3931,9 @@
             }
         })();
     </script>
+    <!-- Vercel Web Analytics -->
+    <script defer src="/_vercel/insights/script.js"></script>
+    <!-- Vercel Speed Insights -->
+    <script defer src="/_vercel/speed-insights/script.js"></script>
 </body>
 </html>
