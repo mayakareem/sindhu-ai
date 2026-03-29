@@ -1,0 +1,14 @@
+{
+  "name": "sindhu-ai",
+  "version": "1.0.0",
+  "description": "Sindhu Sreenath - AI Enablement & Productivity",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build required'",
+    "lint": "echo 'No linting configured for static HTML'"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
